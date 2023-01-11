@@ -29,6 +29,8 @@
  &kp LSHFT     &kp Z   &kp X   &kp C   &kp V      &kp B   &kp N   &kp M  &lt 2 COMMA  &lt 1 DOT     &kp UP
  &kp LCTRL  &kp LALT                          &kp SPACE                     &kp LEFT              &kp DOWN  &kp RIGHT
             >;
+            
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         layer_raise {
