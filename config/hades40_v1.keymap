@@ -53,10 +53,10 @@
 
         Layer_MIDDLE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp MINUS         &kp EQUAL          &kp INS        &kp HOME   &kp PAGE_UP      &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL        &kp END    &kp PAGE_DOWN    &kp RIGHT_SHIFT
-&trans  &trans  &trans  &trans  &trans  &kp SEMICOLON     &kp SINGLE_QUOTE   &kp BACKSLASH  &kp SLASH  &kp RIGHT_SHIFT  &trans
-&trans  &trans                          &trans                                              &trans                      &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &kp MINUS         &kp EQUAL          &kp INS        &kp HOME                &kp PAGE_UP      &trans           &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL        &kp END                 &kp PAGE_DOWN    &kp RIGHT_SHIFT
+&trans  &trans  &trans  &trans  &trans  &kp SEMICOLON     &kp SINGLE_QUOTE   &kp BACKSLASH  &kp SLASH               &kp RIGHT_SHIFT  &trans
+&trans  &trans                          &trans                                              &kp LC(LA(LEFT_ARROW))                   &trans           &kp LC(LA(RIGHT_ARROW))
             >;
         };
     };
