@@ -17,6 +17,15 @@
 
 / {
     macros {
+        VPN: VPN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp N7 &kp R &kp LS(T) &kp AT &kp DLLR &kp Y &kp N &kp A &kp P &kp S &kp E &kp N2 &kp N0 &kp N2 &kp N3 &kp EXCL>;
+
+            label = "VPN";
+        };
     };
 
     keymap {
@@ -45,7 +54,7 @@
         layer_lower {
             bindings = <
 &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &out OUT_TOG  &trans
-&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &trans           &trans        &trans        &trans        &trans        &trans        &trans
+&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &VPN             &trans        &trans        &trans        &trans        &trans        &trans
 &bootloader      &trans           &trans           &trans           &trans           &trans        &trans        &trans        &trans        &trans        &trans
 &trans           &trans                                                              &trans                                    &bt BT_PRV                  &trans      &bt BT_NXT
             >;
