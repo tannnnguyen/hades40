@@ -20,10 +20,7 @@
         VPN: VPN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp N7 &kp R &kp LS(T) &kp AT &kp DLLR &kp Y &kp N &kp A &kp P &kp S &kp E &kp N2 &kp N0 &kp N2 &kp N3 &kp EXCL>;
-
+            bindings = <&kp N7 &kp R &kp LS(T) &kp AT &kp DLLR &kp Y &kp N &kp A &kp P &kp S &kp E &kp N2 &kp N0 &kp N2 &kp N3 &kp EXCL>;
             label = "VPN";
         };
     };
